@@ -1,0 +1,16 @@
+[package]
+name = "sam-app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["macros"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["ansi", "fmt"] }
+
+axum = "0.6.4"
+serde_json = "1.0"
+lambda_http = "0.7.3"
+lambda_runtime = "0.7.3"
